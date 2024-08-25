@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static double pwr(int n,int p) {
+
+        if (n == 0) {
+            return 1;
+        }
+        else {
+            double result = Math. pow(n,p);
+
+            return result;
+        }
+    }
+    public static void main(String[] args) {
+       int n=7;
+        int p=2;
+
+        System.out.println(pwr(n,p));
+    }
+}
