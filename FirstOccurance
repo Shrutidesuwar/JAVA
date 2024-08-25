@@ -1,1 +1,25 @@
+import java.util.*;
+public class Main {
+    public static int firstocc(int[] arr, int index, int key) {
+
+        if (index == arr.length) {
+            return index;
+        }
+            if (arr[index] == key) {
+                return index;
+            }
+            int s = firstocc(arr, index+1, key);
+            return s;
+
+        }
+
+
+        public static void main (String[]args){
+            int[] arr = {2, 2, 1, 4, 5, 1};
+            int key = 1;
+
+            System.out.println(firstocc(arr, 0, key));
+
+        }
+    }
 
