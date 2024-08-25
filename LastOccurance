@@ -1,0 +1,17 @@
+public static int lastocc(int[] arr, int index, int key) {
+    if (index == arr.length) {
+        return -1; // Return -1 if not found
+    }
+
+    int s = lastocc(arr, index + 1, key);
+
+    if (s != -1) {
+        return s; // Return the last found index
+    }
+
+    if (arr[index] == key) {
+        return index; // Return the current index if it's the key
+    }
+
+    return -1; // If key is not found in the array
+}
