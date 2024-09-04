@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int Size = sc.nextInt();
+int temp=0;
+
+
+        int[] arr = new int[Size];
+
+        for (int i = 0; i < Size; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        for (int i = 0; i < Size; i++) {
+           temp=temp+arr[i];
+
+        }
+        int avg=temp/Size;
+        System.out.println(avg);
+
+    }
+}
